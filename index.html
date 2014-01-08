@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="NWPlayer123, DefiniteStudios">
+		<meta name="description" content="This is a website designed for the 2014 FBLA-PBL Districts competition.">
+		<meta name="keywords" content="FBLA, FBLA-PBL, FBLA 2014 Districts, FBLA 2014 Districts Competition, ThunderRidge, ThunderRidge High School, NWPlayer123, DefiniteStudios, Definite Studios">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script language="javascript" type="text/javascript" src="jquery.j"></script>
+		</head>
+	<body>
+		<header>
+			<div id="HeaderLinks">
+				<div style="margin-top: -3.7em;">
+					<a class="MenuLinks" href="#">Home</a>
+					<a class="MenuLinks" href="#packages">Packages</a> 
+					<a class="MenuLinks" href="#dining">Dining</a>
+					<a class="MenuLinks" href="#rooms">Rooms</a> 
+					<a class="MenuLinks" href="#attractions">Attractions</a>	     
+					<a class="MenuLinks" href="#location">Location</a>
+					<a class="MenuLinks" href="#register">Register</a>	
+				</div>
+			</div>
+		</header>
+		<div id="mainbody">
+			<center>
+				<div id="slider">
+				   <img src="http://placehold.it/1300x400"> 
+				</div>
+			</center>
+			<div id="previewfun">
+				<div class="PreviewBoxes">
+					<div class="previewcontent">
+						hm
+					</div>
+				</div>
+				<div class="PreviewBoxes">
+					<div class="previewcontent">
+						hm
+					</div>
+				</div>
+				<div class="PreviewBoxes">
+					<div class="previewcontent">
+						hm
+					</div>
+				</div>
+			</div>
+			<div id="pack">
+				<h1 id="packages">Packages</h1>
+			</div>
+			<div id="din">
+				<h1 id="dining">Dining</h1>
+			</div>
+			<div id="roo">
+				<h1 id="rooms">Rooms</h1>
+			</div>
+			<div id="attract">
+				<h1 id="attractions">Attractions</h1>
+			</div>
+			<div id="locate">
+				<h1 id="location">Location</h1>
+				<br>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x89e06008817405cd%3A0x2b27eb10402ae74e!2sHopkins+Dr%2C+Manchester%2C+VT+05255!5e0!3m2!1sen!2sus!4v1389153676877" width="400" height="320" frameborder="0" style="border:0"></iframe>
+			</div>
+			<div id="reg">
+			<h1 id="register">Register</h1>
+				<ng-view class="ng-scope">
+					<div id="checkIn" class="page ng-scope">
+
+					<!--Begin Google Spreadsheet input -->
+					<center>
+						<form method="POST" action="https://docs.google.com/forms/d/1n2KL8CnJ7Mn6ciKr3Twlv_g5YY5KMQYsZa1JrFLwFpo/formResponse" target="hidden_iframe" onsubmit="checkSub=true;" class="ng-pristine ng-valid">
+							<input type="text" placeholder="Name" name="entry.1648404119">
+							<br>
+							<input type="text" placeholder="Address" name="entry.884264956">
+							<br>
+							<!-- multiple choice -->
+							<select type="ermah" name="entry.1804675108" id="entry_1804675108" aria-label="Room">
+								<option placeholder="Select a Room" value="">-Select a Room-</option>
+								<option value="The Lightfoot">The Lightfoot</option> 
+								<option value="The Thompson">The Thompson</option> 
+								<option value="The Pulliam">The Pulliam</option> 
+								<option value="The Washington">The Washington</option> 
+								<option value="The Chelf Room">The Chelf Room</option>
+							</select>
+						<!-- End multiple choice -->
+							<br>
+							<input type="text" placeholder="Package Desired (If any)" name="entry.549162563">
+							<div class="ss-form-entry">
+							<br>
+							<input type="text" placeholder="Intended Date of Arrival (mm/dd/yyyy)" name="entry.1570829290">
+							<br>
+							<input type="number" placeholder="Stay Duration (Number of Nights)" name="entry.2118283400" aria-label="Stay duration (Nights)  Must be a number greater than or equal to 1" step="any" min="1.0" aria-valuemin="1.0" title="Must be a number greater than or equal to 1"></input>
+							</div>
+							<br>
+							<input type="submit" value="Submit">
+							</input>
+						</form>
+						</center>
+						<!-- End Google Spreadsheet input -->
+
+					</div>
+					<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(checkSub){alert('You Have Registered! Payment is processed once you check in.'); checkSub=false; window.location.hash = '#/transactions'}" class="ng-scope">
+					</iframe>
+				</ng-view>
+			</div>
+			<footer>
+				Merp
+			</footer>
+		</div>
+	</body>
+</html>
