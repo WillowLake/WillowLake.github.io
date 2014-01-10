@@ -11,13 +11,31 @@ body{
 	font-family:"Montserrat";
 	background-color:#D5DED9;
 }
+
+a {
+	color:#27ae60;
+	text-decoration:none;
+
+}
+
+a:visited {
+	color:#27ae60;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#27ae60;
+	text-decoration:none;
+}
+
+a:active {
+	color:#27ae60;
+	text-decoration:none;
+}
+
 li {
 	list-style: none;
 }
-a:link{color:white;text-decoration:none;}
-a:visited{color:white;text-decoration:none;}
-a:hover{color:white;text-decoration:none;}
-a:active{color:white;text-decoration:none;}
 
 header{
 	border-bottom: 5px solid rgba(65,93,120, .7);
@@ -35,6 +53,7 @@ header{
 	right:0em;
 	opacity:1;
 	z-index:1;
+	margin-top: -3.7em;
 }
 
 .MenuLinks{
@@ -47,8 +66,21 @@ header{
 	top:0px !important;
 }
 
+a.MenuLinks {
+	color:white;
+}
+
 .MenuLinks:hover {
 	background-color:rgb(83,119,154);
+}
+
+#mainbody {
+	min-width:1200px;
+}
+
+#previewfun {
+	margin-top:25px;
+	padding-bottom:465px;
 }
 
 .PreviewBoxes{
@@ -66,19 +98,13 @@ header{
 	width:auto;
 	margin:4%;
 }
-#test{
-	padding:0px;
-	margin:0px;
-	color:white;
-}
 
-#pack {
+#roo {
 	clear:both;
 	float:left;
 	width:100%;
 	padding-bottom:350px;
-	padding-top:0px;
-	background-color: #796A51;
+	background-color: #675B49;
 	color:white;
 }
 
@@ -91,12 +117,12 @@ header{
 	color:white;
 }
 
-#roo {
+#pack {
 	clear:both;
 	float:left;
 	width:100%;
 	padding-bottom:350px;
-	background-color: #675B49;
+	background-color: #796A51;
 	color:white;
 }
 
@@ -104,7 +130,7 @@ header{
 	clear:both;
 	float:left;
 	width:100%;
-	padding-bottom:350px;
+	padding-bottom:1800px;
 	background-color: #413D37;
 	color:white;
 }
@@ -112,7 +138,7 @@ header{
 #locate {
 	clear:both;
 	float:left;
-	width:100%;
+	width:100%!important;
 	padding-bottom:350px;
 	background-color: #2E2E2E;
 	color:white;
@@ -120,11 +146,10 @@ header{
 #reg {
 	clear:both;
 	float:left;
-	width:100%;
-	color:white;
+	width:100%!important;
 }
 
-#checkIn {
+#lookin {
 	padding-bottom:200px;
 }
 
@@ -133,36 +158,134 @@ header{
 }
 
 #slider{
-    margin-top:7em;
-}
-#packages {
-	float:left;
-	padding-top:90px;
-}
-
-#dining {
-	float:right;
-	padding-top:90px;
+    margin-top:8em;
 }
 
 #rooms {
 	float:left;
 	padding-top:90px;
+	margin-left: 3em;
+}
+
+#dining {
+	float:right;
+	padding-top:90px;
+	margin-right: 3em;
+
+}
+
+#packages {
+	float:left;
+	padding-top:90px;
+	margin-left: 3em;
 }
 
 #attractions {
 	float:right;
-	padding-top:90px;
+	padding-top: 90px;
+	margin-right: 3em;
+}
+
+img.lincoln {
+	width: 580px;
+	position: absolute;
+	margin-left: -50em;
+	margin-top: -4em;
+}
+
+#linc {
+	position: absolute;
+	margin-top: 20em;
+	margin-left: 65em;
+}
+
+img.sva {
+	position: absolute;
+	margin-left: -50em;
+	margin-top: -4.5em;
+}
+
+#sv {
+	padding-top: 100px;
+	position: absolute;
+	margin-top: 50em;
+	margin-left: 65em;
+}
+
+img.para {
+	position: absolute;
+	width: 580px;
+	margin-left: -50em;
+	margin-top: -4.3em;
+}
+
+#para {
+	position: absolute;
+	margin-top: 93em;
+	margin-left: 65em;
 }
 
 #location{
 	float:left;
-	padding-top:90px;
+	padding-top: 90px;
+	margin-left:3em;
 }
 
 #register {
-	padding-top:90px;
+	padding-top: 90px;
+	margin-left: 3em;
 }
+
+hr.vertical {
+	margin-top: 18.2em;
+	margin-left: 60em;
+	height: 300px;
+	position: absolute;
+} 
+
+hr.v1 {
+	margin-left: -9em;
+	margin-top: -3em;
+	height: 350px;
+	position: absolute;
+}
+
+hr.v2 {
+	margin-left: -9em;
+	margin-top: -3em;
+	height: 365px;
+	position: absolute;
+}
+
+hr.horizontal {
+	width: 300px;
+	position: absolute;
+	margin-left: 36em;
+	margin-top: 28em;
+}
+
+h3.hours {
+	position: absolute;
+	margin-left: 31.5em;
+	margin-top: 26em;
+}
+
+p.hours {
+	position: absolute;
+	margin-left: 37em;
+	margin-top: 34em;
+}
+
+#address-container {
+	position: absolute;
+	margin-left: 37em;
+	margin-top: 18em;
+}
+
+#adman {
+	margin-top:2em;
+}
+
 form input[type="text"]{
 	display:block;
 	margin:10px auto;
@@ -226,4 +349,83 @@ footer{
 	margin-top:31.250em;
 	height:4.688em;
 	width:100%;
+}
+
+.foot {
+	text-align:center;
+	line-height: 1.7em;
+	padding-top:15px;
+}
+
+/*Scrollbar*/
+
+::-webkit-scrollbar {  
+    width: 12px;  
+}  
+::-webkit-scrollbar-track {  
+    background-color: #eaeaea;  
+    border-left: 1px solid #ccc;  
+}  
+::-webkit-scrollbar-thumb {  
+    background-color: #aaa;  
+}  
+::-webkit-scrollbar-thumb:hover {  
+    background-color: #aaa;  
+}  
+
+/*End Scrollbar*/
+
+/*Begin ipad Media*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+
+}
+/*End ipad Media*/
+
+/*Begin iphone 5 Media*/
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) {
+
+}
+/*End iphone 5 Media*/
+
+/* Desktops and laptops */
+@media only screen 
+and (min-width : 600px)
+and (max-width : 960px) {
+
+#HeaderLinks {
+	margin-left: 60%;
+	padding-top:50px;
+	width:12%;
+	right:0em;
+	opacity:1;
+	z-index:1;
+	margin-top: -3.7em;
+}
+
+.MenuLinks {
+	font-family:"Montserrat";
+	padding:32.5px 15px 1.719em;
+	font-size:0.930em;
+	color:white;
+	float:left;
+	display:inline;
+	top:0px !important;
+}
+}
+
+/* Large screens */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
 }

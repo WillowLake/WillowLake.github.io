@@ -5,21 +5,24 @@
 		<meta name="author" content="NWPlayer123, DefiniteStudios">
 		<meta name="description" content="This is a website designed for the 2014 FBLA-PBL Districts competition.">
 		<meta name="keywords" content="FBLA, FBLA-PBL, FBLA 2014 Districts, FBLA 2014 Districts Competition, ThunderRidge, ThunderRidge High School, NWPlayer123, DefiniteStudios, Definite Studios">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<script language="javascript" type="text/javascript" src="jquery.j"></script>
+		<link href='http://fonts.googleapis.com/css?family=Raleway:300,500|Arvo:700' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script language="javascript" type="text/javascript" src="jquery.js"></script>
 		</head>
 	<body>
+				<h2 id="top">r</h2>
 		<header>
 			<div id="HeaderLinks">
-				<div style="margin-top: -3.7em;">
-					<a class="MenuLinks" href="#">Home</a>
-					<a class="MenuLinks" href="#packages">Packages</a> 
-					<a class="MenuLinks" href="#dining">Dining</a>
+					<a class="MenuLinks" href="#top">Home</a>
 					<a class="MenuLinks" href="#rooms">Rooms</a> 
+					<a class="MenuLinks" href="#dining">Dining</a>
+					<a class="MenuLinks" href="#packages">Packages</a> 
 					<a class="MenuLinks" href="#attractions">Attractions</a>	     
 					<a class="MenuLinks" href="#location">Location</a>
 					<a class="MenuLinks" href="#register">Register</a>	
-				</div>
 			</div>
 		</header>
 		<div id="mainbody">
@@ -45,31 +48,77 @@
 					</div>
 				</div>
 			</div>
-			<div id="pack">
-				<h1 id="packages">Packages</h1>
+			<div id="roo">
+				<h1 id="rooms">Rooms</h1>
 			</div>
 			<div id="din">
 				<h1 id="dining">Dining</h1>
 			</div>
-			<div id="roo">
-				<h1 id="rooms">Rooms</h1>
+			<div id="pack">
+				<h1 id="packages">Packages</h1>
+				<h2 id="onen">One-Night Packages</h2>
+				<h2 id="twon">Two-Night Packages</h2>
+				<h2 id="honey">Honeymoons</h2>
+				<h2 id="anniv">Anniversaries</h2>
 			</div>
 			<div id="attract">
 				<h1 id="attractions">Attractions</h1>
+				<div id="linc">
+					<img src="images/lincolnhome.jpg" class="lincoln">
+					<hr class="v1">
+					<h2>Lincoln Memorial House</h2>
+					<p>One of the main attractions here is the Lincoln Memorial House, which is a 5 minute drive away.</p>
+					<p>Entry costs $16 for adults, $5 for youth, and children under 6 and members are free.</p>
+					<p>If you would like a guided tour, then you'll need an additional $5 for adults,</p>
+					<p>and $2 for children above the age of 5.</p>
+					<a href="http://www.hildene.org/">Website</a>
+				</div>
+				<div id="sv">
+					<img src="images/sva.jpg" class="sva">
+					<hr class="v2">
+					<h2>Southern Vermont Arts Center</h2>
+					<p>A fun place to visit is the Southern Vermont Arts Center</p>
+					<p>SVAC is a 10-15 minute drive from The Willow Lake.</p>
+					<p>You can go to a workshop at the Hay Madeira Education Center, see a performance at the Arkell Pavilion,</p>
+					<p>Browse art at the Wilson Museum or the Yester House, or wander the Sculpture Park or Boswell Botany Trail.</p>
+					<p>There's lots to see and do.<p>
+					<a href="http://www.svac.org/">Website</a>
+				</div>
+				<div id="para">
+					<img src="images/para.jpg" class="para">
+					<hr class="v2">
+					<h2>Paramount Theatre</h2>
+					<p>An inspirational place to visit is the Paramount Theatre.</p>
+					<p>It's an hour drive, but it's well worth the wait to see the rennovated Theatre.</p>
+					<p>The main attraction is the variety of performances you can see in the Theatre</p>
+					<p>See the website for tickets and showtimes</p>
+					<a href="http://www.paramountvt.org/">Website</a>
+				</div>
 			</div>
 			<div id="locate">
 				<h1 id="location">Location</h1>
-				<br>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x89e06008817405cd%3A0x2b27eb10402ae74e!2sHopkins+Dr%2C+Manchester%2C+VT+05255!5e0!3m2!1sen!2sus!4v1389153676877" width="400" height="320" frameborder="0" style="border:0"></iframe>
+			<br>
+				<div id="address-container">
+					<h3>Address</h3>
+					<div id="adman">
+					<p>1850 Hopkins Drive</p>
+					<p>Manchester VT, 05254</p>
+				</div>
+				</div>
+				<hr class="horizontal">
+				<h3 class="hours">Hours of Operation</h3>
+				<p class="hours">Sat-Sun (2:00am-12:00pm)</p>
+				<hr class="vertical">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x89e06008817405cd%3A0x2b27eb10402ae74e!2sHopkins+Dr%2C+Manchest                 er%2C+VT+05255!5e0!3m2!1sen!2sus!4v1389153676877" width="400" height="320" frameborder="0" style="margin-top: 17.5em;margin-left: 52em;">
+				</iframe>
 			</div>
 			<div id="reg">
 			<h1 id="register">Register</h1>
-				<ng-view class="ng-scope">
-					<div id="checkIn" class="page ng-scope">
+					<div id="lookin">
 
 					<!--Begin Google Spreadsheet input -->
 					<center>
-						<form method="POST" action="https://docs.google.com/forms/d/1n2KL8CnJ7Mn6ciKr3Twlv_g5YY5KMQYsZa1JrFLwFpo/formResponse" target="hidden_iframe" onsubmit="checkSub=true;" class="ng-pristine ng-valid">
+						<form method="POST" action="https://docs.google.com/forms/d/1n2KL8CnJ7Mn6ciKr3Twlv_g5YY5KMQYsZa1JrFLwFpo/formResponse" target="hidden_iframe" onsubmit="checkSub=true;">
 							<input type="text" placeholder="Name" name="entry.1648404119">
 							<br>
 							<input type="text" placeholder="Address" name="entry.884264956">
@@ -77,7 +126,6 @@
 							<!-- multiple choice -->
 							<select type="ermah" name="entry.1804675108" id="entry_1804675108" aria-label="Room">
 								<option placeholder="Select a Room" value="">-Select a Room-</option>
-								<option value="The Lightfoot">The Lightfoot</option> 
 								<option value="The Thompson">The Thompson</option> 
 								<option value="The Pulliam">The Pulliam</option> 
 								<option value="The Washington">The Washington</option> 
@@ -92,7 +140,7 @@
 							<br>
 							<input type="number" placeholder="Stay Duration (Number of Nights)" name="entry.2118283400" aria-label="Stay duration (Nights)  Must be a number greater than or equal to 1" step="any" min="1.0" aria-valuemin="1.0" title="Must be a number greater than or equal to 1"></input>
 							</div>
-							<br>
+						   	<br>
 							<input type="submit" value="Submit">
 							</input>
 						</form>
@@ -100,12 +148,11 @@
 						<!-- End Google Spreadsheet input -->
 
 					</div>
-					<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(checkSub){alert('You Have Registered! Payment is processed once you check in.'); checkSub=false; window.location.hash = '#/transactions'}" class="ng-scope">
+					<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(checkSub){alert('You Have Registered! Payment is processed once you check in.')">
 					</iframe>
-				</ng-view>
 			</div>
 			<footer>
-				Merp
+				<p class="foot">&copy;2013 Willow Lake Bed and Breakfast.</p>
 			</footer>
 		</div>
 	</body>
