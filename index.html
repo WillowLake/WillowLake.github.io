@@ -11,6 +11,8 @@
 		<link rel="stylesheet" type="text/css" href="menu.css">
 		<link href='http://fonts.googleapis.com/css?family=Raleway:300,500|Arvo:700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" href="slider/nivo-slider.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="slider/default/default.css" type="text/css" media="screen" />
 		<link href='http://fonts.googleapis.com/css?family=Raleway:300,500|Arvo:700' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>  
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -19,6 +21,8 @@
 	<body>
 	<h1 id="top">j</h1>
 		<header>
+		<img src="images/logom.png" class="logor">
+		<h2 class="fum">The Willow Lake B&B</h2>
 			<div id="HeaderLinks">
 				<a class="MenuLinks" href="#top">Home</a>
 				<a class="MenuLinks" href="#rooms">Rooms</a> 
@@ -31,9 +35,18 @@
 		</header>
 		<div id="mainbody">
 			<center>
-				<div id="slider">
-					<img src="http://placehold.it/800x400"><!--should be 1300x400 on desktop-->
-				</div>
+				<div id="wrapper">
+        
+        <div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+                <img src="images/home.jpg" alt="not supported" data-transition="slideInLeft"/>
+                <img src="images/forest.jpg" alt="not supported" data-transition="slideInLeft" />
+                <img src="images/forest.jpg" alt="not supported" data-transition="slideInLeft" />
+                <img src="images/forest.jpg" alt="not supported" data-transition="slideInLeft" />
+            </div>
+        </div>
+
+    </div>
 			</center>
 			<div id="previewfun">
 				<div class="PreviewBoxes">
@@ -211,10 +224,10 @@
 										<dd>Crepes with roasted french plums, yogurt &amp; honey</dd>
 
 										<dt>Chocolate Gâteau de Crêpes</dt>
-										<dd>Gâteau de crêpes with chocolate pastry cream, Hungarian cheese, and dulce de leche (Gluten Free)</dd>
+										<dd>Gâteau de crêpes with chocolate pastry cream, Hungarian cheese, and dulce de leche <b>(Gluten Free)</b></dd>
 
 										<dt>Raspberry Croissant</a></dt>
-										<dd>Delicious pastry filled with rich raspberry(Gluten Free)</dd>
+										<dd>Delicious pastry filled with rich raspberry <b>(Gluten Free)</b></dd>
 
 										<dt>Almond Croissant</dt>
 										<dd>Dried almonds from Vermont in a creamy pastry</dd>
@@ -244,19 +257,19 @@
 										<dt>Brownie Bourbon Balls</dt>
 										<dd>These packed brownies are a favorite among our guests</dd>
 										
-										<dt><a href="http://willowlake.github.io/" class="rm-viewdetails" data-thumb="images1/12.jpg">Mini Coconut Cream Pies</a></dt>
+										<dt><a href="#din" class="rm-viewdetails" data-thumb="images1/12.jpg">Mini Coconut Cream Pies</a></dt>
 										<dd>Rich coconut pie topped with fine whipped cream</dd>
 										
-										<dt><a href="http://willowlake.github.io/" class="rm-viewdetails" data-thumb="images1/10.jpg">Raspberry and Pistachio Mini Cakes</a></dt>
+										<dt><a href="#din" class="rm-viewdetails" data-thumb="images1/10.jpg">Raspberry and Pistachio Mini Cakes</a></dt>
 										<dd>Creamy cakes with real, local pistachios used in filling</dd>
 										
-										<dt><a href="http://willowlake.github.io/" class="rm-viewdetails" data-thumb="images1/7.jpg">Cheesecake Kringle</a></dt>
+										<dt><a href="#din" class="rm-viewdetails" data-thumb="images1/7.jpg">Cheesecake Kringle</a></dt>
 										<dd>A local recipe using Wisconson cheese in the best cheesecake that you've ever had </dd>
 										
-										<dt><a href="http://willowlake.github.io/" class="rm-viewdetails" data-thumb="images1/2.jpg">Apple Roses</a></dt>
+										<dt><a href="#din" class="rm-viewdetails" data-thumb="images1/2.jpg">Apple Roses</a></dt>
 										<dd>Apple slices baked to a perfection and then topped with our secret seasoning</dd>
 										
-										<dt><a href="http://herbivoracious.com/2008/04/recipe-atayef.html" class="rm-viewdetails" data-thumb="images1/9.jpg">Classic Atayef</a></dt>
+										<dt><a href="#din" class="rm-viewdetails" data-thumb="images1/9.jpg">Classic Atayef</a></dt>
 										<dd>Syrian ricotta-filled dessert pancakes</dd>
 									</dl>
 									<div class="rm-order">
@@ -300,6 +313,7 @@
 						</div>
 					</div>
 				</div>
+				<div class="sectionpad"></div>
 				<div id="sv">
 					<div class="imgalignleft">
 						<img src="images/sva.jpg" style="float:right;margin-right:10%;width:440px;height:276px">
@@ -317,6 +331,7 @@
 						</div>
 					</div>
 				</div>
+				<div class="sectionpad"></div>
 				<div id="para">
 					<div class="imgalignleft">
 						<img src="images/para.jpg" style="float:right;margin-right:10%;width:440px;height:276px">
@@ -399,8 +414,15 @@
 				<p class="foot">&copy;2013 Willow Lake Bed and Breakfast.</p>
 			</footer>
 		</div>
-		        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
         <script type="text/javascript" src="js/menu.js"></script>
+        <script type="text/javascript" src="slider/jquery.nivo.slider.js"></script>
+    	<script type="text/javascript">
+    	$(window).load(function() {
+        	$('#slider').nivoSlider();
+    	});
+    	</script>
 		<script type="text/javascript">
 			$(function() {
 
