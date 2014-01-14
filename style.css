@@ -6,14 +6,14 @@
 }
 
 body{
-	padding:0em;
-	margin:0em;
-	font-family:"Montserrat";
-	background-color:#D5DED9;
+	padding: 0em;
+	margin: 0em;
+	font-family: "Montserrat";
+	background-color: #7A6A52;
 }
 
 a {
-	color:#27ae60;
+	color:#27ae60!important;
 	text-decoration:none;
 
 }
@@ -44,16 +44,19 @@ header{
 	width:100%;
 	z-index: 2;
 	top:0px!important;
+	height: 75px;
+	text-align: right;
 }
 
 #HeaderLinks{
-	margin-left: 60%;
+	right:10px;
+	position:fixed;
 	padding-top:50px;
 	width:100%;
-	right:0em;
+	/*right:0em;*/
 	opacity:1;
 	z-index:1;
-	margin-top: -3.7em;
+	margin-top: -3.5em;
 }
 
 .MenuLinks{
@@ -61,13 +64,13 @@ header{
 	padding:32.5px 15px 1.719em;
 	font-size:0.930em;
 	color:white;
-	float:left;
-	display:inline;
+	/*float:left;*/
+	display:inline-block;
 	top:0px !important;
 }
 
 a.MenuLinks {
-	color:white;
+	color:white!important;
 }
 
 .MenuLinks:hover {
@@ -79,8 +82,8 @@ a.MenuLinks {
 }
 
 #previewfun {
-	margin-top:25px;
-	padding-bottom:465px;
+	width:100%;
+	display:none!important;
 }
 
 .PreviewBoxes{
@@ -103,8 +106,7 @@ a.MenuLinks {
 	clear:both;
 	float:left;
 	width:100%;
-	padding-bottom:350px;
-	background-color: #675B49;
+	background-color: #7A6A52;
 	color:white;
 }
 
@@ -113,7 +115,7 @@ a.MenuLinks {
 	float:left;
 	width:100%;
 	padding-bottom:350px;
-	background-color: #544C40;
+	background-color: #675B49;
 	color:white;
 }
 
@@ -122,7 +124,7 @@ a.MenuLinks {
 	float:left;
 	width:100%;
 	padding-bottom:350px;
-	background-color: #796A51;
+	background-color: #544C40;
 	color:white;
 }
 
@@ -130,7 +132,6 @@ a.MenuLinks {
 	clear:both;
 	float:left;
 	width:100%;
-	padding-bottom:1800px;
 	background-color: #413D37;
 	color:white;
 }
@@ -139,7 +140,6 @@ a.MenuLinks {
 	clear:both;
 	float:left;
 	width:100%!important;
-	padding-bottom:350px;
 	background-color: #2E2E2E;
 	color:white;
 }
@@ -194,9 +194,9 @@ img.lincoln {
 }
 
 #linc {
-	position: absolute;
-	margin-top: 20em;
-	margin-left: 65em;
+	clear:both;
+	width: 100%;
+	margin:0 auto;
 }
 
 img.sva {
@@ -206,12 +206,58 @@ img.sva {
 }
 
 #sv {
-	padding-top: 100px;
-	position: absolute;
-	margin-top: 50em;
-	margin-left: 65em;
+	clear:both;
+	width: 100%;
+	margin:0 auto;
 }
-
+#address {
+	clear:both;
+	width: 100%;
+	margin:0 auto;
+}
+#chelf{
+	clear:both;
+	width: 100%;
+	margin:0 auto;
+}
+.imgalignleft{
+	width:49.5%;
+	float:left;
+	margin-right:0.2%;
+}
+.imgalignright{
+	width:49.5%;
+	float:right;
+}
+.vlalign{
+	margin:0 auto;
+	display:inline-block;
+	background-color:white;
+}
+.textaligncenterleft{
+	width:49.5%;
+	float:left;
+	margin:4em auto;
+}
+.textaligncenterright{
+	width:49.5%;
+	float:right;
+	margin:0 auto;
+}
+.textparaalignleft{
+	width:80%;
+	margin:0px auto;
+}
+.textparaalignright{
+	width:80%;
+	margin:0px auto;
+}
+.textalign{
+	margin:0;
+}
+.textalignright{
+	text-align:right;
+}
 img.para {
 	position: absolute;
 	width: 580px;
@@ -220,9 +266,9 @@ img.para {
 }
 
 #para {
-	position: absolute;
-	margin-top: 93em;
-	margin-left: 65em;
+	clear:both;
+	width: 100%;
+	margin:0 auto;
 }
 
 #location{
@@ -260,7 +306,6 @@ hr.v2 {
 hr.horizontal {
 	width: 300px;
 	position: absolute;
-	margin-left: 36em;
 	margin-top: 28em;
 }
 
@@ -282,8 +327,19 @@ p.hours {
 	margin-top: 18em;
 }
 
-#adman {
-	margin-top:2em;
+.endsectionpad{
+	height:150px;
+}
+.sectionpad{
+	height:75px;
+}
+.imgfloatleft{
+	float:left;
+	margin-left:10%!important;
+}
+.imgfloatright{
+	float:right;
+	margin-right:10%;
 }
 
 form input[type="text"]{
@@ -355,6 +411,13 @@ footer{
 	text-align:center;
 	line-height: 1.7em;
 	padding-top:15px;
+}
+
+.pkgpad{
+	padding-top:200px;
+}
+.pkgpadside{
+	margin-left: 3em;
 }
 
 /*Scrollbar*/
