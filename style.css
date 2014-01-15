@@ -457,38 +457,60 @@ and (max-device-width : 1024px)  {
 }
 /*End ipad Media*/
 
-/*Begin iphone 5 Media*/
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 568px) {
-
-}
-/*End iphone 5 Media*/
-
 /* Desktops and laptops */
 @media only screen 
-and (min-width : 600px)
-and (max-width : 960px) {
+and (min-width : 300px)
+and (max-width : 1137px) {
+
+body {
+	overflow: scroll;
+}
 
 #HeaderLinks {
-	margin-left: 60%;
-	padding-top:50px;
-	width:12%;
+	padding-top:45px;
 	right:0em;
 	opacity:1;
-	z-index:1;
+	z-index:3;
 	margin-top: -3.7em;
 }
 
 .MenuLinks {
 	font-family:"Montserrat";
-	padding:32.5px 15px 1.719em;
+	padding:32.5px 7px 1.719em;
 	font-size:0.930em;
 	color:white;
-	float:left;
+	float:right;
 	display:inline;
 	top:0px !important;
 }
+
+#diningsection{
+	clear:both;
+	float:left;
+	width:100%;
+	padding-bottom:350px;
+	background-color: #675B49;
+	color:white;
+}
+
+#roomsection {
+	clear:both;
+	float:left;
+	width:100%;
+	background-color: #7A6A52;
+	color:white;
+}
+
+#packagesection{
+	min-width: 600px;
+	clear:both;
+	float:left;
+	width:100%;
+	padding-bottom:350px;
+	background-color: #544C40;
+	color:white;
+}
+
 }
 
 /* Large screens */
