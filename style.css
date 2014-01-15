@@ -39,6 +39,7 @@ li {
 
 .fum {
 	float:left;
+	padding-top:.4em;
 }
 
 .logor {
@@ -89,6 +90,7 @@ a.MenuLinks {
 
 #mainbody {
 	min-width:1200px;
+	background-image:url('images/bg.jpg');
 }
 
 #previewfun {
@@ -153,10 +155,12 @@ a.MenuLinks {
 	background-color: #2E2E2E;
 	color:white;
 }
+
 #reg {
 	clear:both;
 	float:left;
 	width:100%!important;
+	background-image:url('images/bg.jpg');
 }
 
 #lookin {
@@ -275,6 +279,18 @@ img.sva {
 
 .textalign{
 	margin:0;
+}
+
+.tomo {
+	text-align:center;
+	clear:both;
+}
+
+.lab {
+	float:right;
+	margin-right:10%;
+	width:440px;
+	height:276px
 }
 
 .textalignright{
