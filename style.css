@@ -1,3 +1,4 @@
+/*Begin General Definitions*/
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
@@ -6,235 +7,57 @@
 }
 
 body{
-	padding: 0em;
-	margin: 0em;
 	font-family: "Montserrat";
 	background-color: #7A6A52;
+	padding: 0em;
+	margin: 0em;
 }
 
+footer{
+	clear:both;
+	background-color:#4A6A89;
+	margin-top:31.250em;
+	height:4.688em;
+	width:100%;
+}
+
+
 a {
-	color:#27ae60!important;
-	text-decoration:none;
+	color: #27ae60!important;
+	text-decoration: none;
 
 }
 
 a:visited {
-	color:#27ae60;
-	text-decoration:none;
+	text-decoration: none;
+	color: #27ae60;
 }
 
 a:hover {
-	color:#27ae60;
-	text-decoration:none;
+	text-decoration: none;
+	color: #27ae60;
 }
 
 a:active {
-	color:#27ae60;
-	text-decoration:none;
+	text-decoration: none;
+	color: #27ae60;
 }
 
 li {
 	list-style: none;
 }
-
-.fum {
-	float:left;
-	padding-top:.4em;
-}
-
-.logor {
-	width: 165px;
-	height: 85px;
-	margin-top:-.79em;
-	float: left;
-}
-
-header{
-	border-bottom: 5px solid rgba(65,93,120, .7);
-	background-color: rgb(74,106,137);
-	position: fixed;
-	width:100%;
-	z-index: 11;
-	top:0px!important;
-	height: 75px;
-	text-align: right;
-}
-
-#HeaderLinks{
-	right:10px;
-	position:fixed;
-	padding-top:50px;
-	width:100%;
-	/*right:0em;*/
-	opacity:1;
-	margin-top: -3.5em;
-}
-
-.MenuLinks{
-	font-family:"Montserrat";
-	padding:23px 19px 1.719em;
-	font-size:1.1em;
-	color:white;
-	/*float:left;*/
-	display:inline-block;
-	top:0px !important;
-}
-
-a.MenuLinks {
-	color:white!important;
-}
-
-.MenuLinks:hover {
-	background-color:rgb(83,119,154);
-}
-
-#mainbody {
-	min-width:1200px;
-	background-image:url('Images/bg.jpg');
-}
-
-#previewfun {
-	width:100%;
-	display:none!important;
-}
-
-.PreviewBoxes{
-	border:2px solid rgba(65,93,120, .7);
-	background-color:rgb(83,119,154);
-	margin: 2em 3% 0.938em 3%;
-	border-radius:5px;
-	height:20.250em;
-	z-index: 1;
-	float:left;
-	width:27%;
-}
-
-.previewcontent{
-	width:auto;
-	margin:4%;
-}
-
-#roo {
-	clear:both;
-	float:left;
-	width:100%;
-	background-color: #7A6A52;
-	color:white;
-}
-
-#din {
-	clear:both;
-	float:left;
-	width:100%;
-	padding-bottom:350px;
-	background-color: #675B49;
-	color:white;
-}
-
-#pack {
-	clear:both;
-	float:left;
-	width:100%;
-	padding-bottom:350px;
-	background-color: #544C40;
-	color:white;
-}
-
-#attract {
-	clear:both;
-	float:left;
-	width:100%;
-	background-color: #413D37;
-	color:white;
-}
-
-#locate {
-	clear:both;
-	float:left;
-	width:100%!important;
-	background-color: #2E2E2E;
-	color:white;
-}
-
-#reg {
-	clear:both;
-	float:left;
-	width:100%!important;
-	background-image:url('images/bg.jpg');
-}
-
-#lookin {
-	padding-bottom:200px;
-}
-
-#mainbody{
-	margin-top:75px;
-}
-
+/*End General Definitions*/
+/*Begin Floating Positioned Content Definitions*/
 #slider{
     margin-top:8em;
 }
 
-#rooms {
-	float:left;
-	padding-top:90px;
-	margin-left: 3em;
+.sectionpad{
+	height:75px;
 }
 
-#dining {
-	float:right;
-	padding-top:90px;
-	margin-right: 3em;
-
-}
-
-#packages {
-	float:left;
-	padding-top:90px;
-	margin-left: 3em;
-}
-
-#attractions {
-	float:right;
-	padding-top: 90px;
-	margin-right: 3em;
-}
-
-img.lincoln {
-	width: 580px;
-	position: absolute;
-	margin-left: -50em;
-	margin-top: -4em;
-}
-
-#linc {
-	clear:both;
-	width: 100%;
-	margin:0 auto;
-}
-
-img.sva {
-	position: absolute;
-	margin-left: -50em;
-	margin-top: -4.5em;
-}
-
-#sv {
-	clear:both;
-	width: 100%;
-	margin:0 auto;
-}
-
-#address {
-	clear:both;
-	width: 100%;
-	margin:0 auto;
-}
-
-#chelf{
-	clear:both;
-	width: 100%;
-	margin:0 auto;
+.endsectionpad{
+	height:150px;
 }
 
 .imgalignleft{
@@ -246,6 +69,16 @@ img.sva {
 .imgalignright{
 	width:49.5%;
 	float:right;
+}
+
+.imgfloatleft{
+	float:left;
+	margin-left:10%;
+}
+
+.imgfloatright{
+	float:right;
+	margin-right:10%;
 }
 
 .vlalign{
@@ -281,107 +114,234 @@ img.sva {
 	margin:0;
 }
 
-.tomo {
-	text-align:center;
-	clear:both;
-}
-
-.lab {
-	float:right;
-	margin-right:10%;
-	width:440px;
-	height:276px
-}
-
 .textalignright{
 	text-align:right;
 }
-
-img.para {
-	position: absolute;
-	width: 580px;
-	margin-left: -50em;
-	margin-top: -4.3em;
+/*End Floating Positioned Content Definitions*/
+/*Begin Header Definitions*/
+header{
+	border-bottom: 5px solid rgba(65,93,120, .7);
+	background-color: rgb(74,106,137);
+	top:0px!important;
+	text-align: right;
+	position: fixed;
+	height: 75px;
+	z-index: 11;
+	width:100%;
 }
 
-#para {
+#logoimg {
+	margin-top: -0.79em;
+	width: 165px;
+	height: 85px;
+	float: left;
+}
+
+#logotxt {
+	padding-top: 0.4em;
+	float: left;
+}
+
+#HeaderLinks{
+	right:10px;
+	position:fixed;
+	padding-top:50px;
+	width:100%;
+	opacity:1;
+	margin-top: -3.5em;
+}
+
+.MenuLinks{
+	padding:23px 19px 1.719em;
+	font-family:"Montserrat";
+	display:inline-block;
+	top:0px !important;
+	font-size:1.1em;
+	color:white;
+}
+
+a.MenuLinks {
+	color:white!important;
+}
+
+.MenuLinks:hover {
+	background-color:rgb(83,119,154);
+}
+/*End Header Definitions*/
+/*Begin Body and Preview Definitions*/
+#mainbody {
+	background-image:url('images/bg.jpg');
+	min-width:1200px;
+	margin-top:75px;
+}
+
+#previewbb {
+	display:none!important;
+	width:100%;
+}
+
+.previewboxes{
+	border:2px solid rgba(65,93,120, .7);
+	background-color:rgb(83,119,154);
+	margin: 2em 3% 0.938em 3%;
+	border-radius:5px;
+	height:20.250em;
+	z-index: 1;
+	float:left;
+	width:27%;
+}
+
+.previewcontent{
+	width:auto;
+	margin:4%;
+}
+/*End Body and Preview Definitions*/
+/*Begin Rooms Definitions*/
+#roomsection {
+	clear:both;
+	float:left;
+	width:100%;
+	background-color: #7A6A52;
+	color:white;
+}
+
+#roomstitle {
+	float:left;
+	padding-top:90px;
+	margin-left: 3em;
+}
+
+#chelf{
 	clear:both;
 	width: 100%;
 	margin:0 auto;
 }
 
-#location{
+#lightfoot{
+	clear:both;
+	width: 100%;
+	margin:0 auto;
+}
+
+#thompson{
+	clear:both;
+	width: 100%;
+	margin:0 auto;
+}
+
+#pulliam{
+	clear:both;
+	width: 100%;
+	margin:0 auto;
+}
+/*End Room Definitions*/
+/*Begin Dining Section Definitions*/
+#diningsection{
+	clear:both;
+	float:left;
+	width:100%;
+	padding-bottom:350px;
+	background-color: #675B49;
+	color:white;
+}
+
+#diningtitle {
+	float:right;
+	padding-top:90px;
+	margin-right: 3em;
+}
+
+#diningfooter{
+	text-align:center;
+	clear:both;
+}
+/*End Dining Section Definitions*/
+/*Begin Packages Section Definitions*/
+#packagesection{
+	clear:both;
+	float:left;
+	width:100%;
+	padding-bottom:350px;
+	background-color: #544C40;
+	color:white;
+}
+
+#packagetitle{
+	float:left;
+	padding-top:90px;
+	margin-left: 3em;
+}
+
+.pkgpad{
+	padding-top:200px;
+}
+
+.pkgpadside{
+	margin-left: 3em;
+}
+/*End Packages Section Definitions*/
+/*Begin Attractions Section Definitions*/
+#attractionsection{
+	clear:both;
+	float:left;
+	width:100%;
+	background-color: #413D37;
+	color:white;
+}
+
+#attractiontitle {
+	float:right;
+	padding-top: 90px;
+	margin-right: 3em;
+}
+
+.attractionimg{
+	float:right;
+	margin-right:10%;
+	width:440px;
+	height:276px;
+}
+
+#hildene {
+	clear:both;
+	width: 100%;
+	margin:0 auto;
+}
+
+#artscenter {
+	clear:both;
+	width: 100%;
+	margin:0 auto;
+}
+
+#paramount {
+	clear:both;
+	width: 100%;
+	margin:0 auto;
+}
+/*End Attractions Section Definitions*/
+/*Begin Location Section Definitions*/
+#locationsection {
+	clear:both;
+	float:left;
+	width:100%!important;
+	background-color: #2E2E2E;
+	color:white;
+}
+
+#locationtitle{
 	float:left;
 	padding-top: 90px;
 	margin-left:3em;
 }
 
-#register {
-	padding-top: 90px;
-	margin-left: 3em;
-	color:white;
+#locationbb {
+	clear:both;
+	width: 100%;
+	margin:0 auto;
 }
-
-hr.vertical {
-	margin-top: 18.2em;
-	margin-left: 60em;
-	height: 300px;
-	position: absolute;
-} 
-
-hr.v1 {
-	margin-left: -9em;
-	margin-top: -3em;
-	height: 350px;
-	position: absolute;
-}
-
-hr.v2 {
-	margin-left: -9em;
-	margin-top: -3em;
-	height: 365px;
-	position: absolute;
-}
-
-hr.horizontal {
-	width: 300px;
-	position: absolute;
-	margin-top: 28em;
-}
-
-h3.hours {
-	position: absolute;
-	margin-left: 31.5em;
-	margin-top: 26em;
-}
-
-p.hours {
-	position: absolute;
-	margin-left: 37em;
-	margin-top: 34em;
-}
-
-#address-container {
-	position: absolute;
-	margin-left: 37em;
-	margin-top: 18em;
-}
-
-.endsectionpad{
-	height:150px;
-}
-.sectionpad{
-	height:75px;
-}
-.imgfloatleft{
-	float:left;
-	margin-left:10%!important;
-}
-.imgfloatright{
-	float:right;
-	margin-right:10%;
-}
-
+/*End Location Section Definitions*/
+/*Begin Registration Form Definitions*/
 form input[type="text"]{
 	display:block;
 	margin:10px auto;
@@ -437,30 +397,40 @@ form input[type="submit"]{
 	text-shadow:1px 1px 3px rgba(0,0,0,0.4);
 	margin-bottom:10px
 }
-
-
-footer{
+/*End Registration Form Definitions*/
+/*Begin Registration Section Definitions*/
+#registrationsection {
 	clear:both;
-	background-color:#4A6A89;
-	margin-top:31.250em;
-	height:4.688em;
-	width:100%;
+	float:left;
+	width:100%!important;
+	background-image:url('images/bg.jpg');
 }
 
+#registrationtitle {
+	padding-top: 90px;
+	margin-left: 3em;
+	color:white;
+}
+
+#registrationheader{
+	text-align:center;
+	clear:both;
+	color:white;
+}
+
+#lookin {
+	padding-bottom:200px;
+}
+/*End Registration Section Definitions*/
+/*Begin Footer Definitions*/
 .foot {
 	text-align:center;
 	line-height: 1.7em;
 	padding-top:15px;
 	font-weight:bold;
 }
-
-.pkgpad{
-	padding-top:200px;
-}
-.pkgpadside{
-	margin-left: 3em;
-}
-
+/*End Footer Definitions*/
+/*Begin Media Queries*/
 /*Scrollbar*/
 
 ::-webkit-scrollbar {  
@@ -533,3 +503,4 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
 /* Styles */
 }
+/*End Media Queries*/
