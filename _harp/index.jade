@@ -1,0 +1,425 @@
+!!! 5
+html(lang='en')
+head
+    meta(charset='UTF-8')
+    meta(name='author', content='NWPlayer123, DefiniteStudios, LLC')
+    meta(name='description', content='This is a website designed for the 2014 FBLA-PBL Districts competition.')
+    meta(name='keywords', content='FBLA, FBLA-PBL, FBLA 2014 Districts, FBLA 2014 Districts Competition, ThunderRidge, ThunderRidge High School, NWPlayer123, DefiniteStudios, Definite Studios')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='viewport', content='width=720, maximum-scale=1.0')
+    link(href='http://fonts.googleapis.com/css?family=Raleway:300,500|Arvo:700', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='slider/default/default.css', type='text/css', media='screen')
+    link(rel='stylesheet', href='slider/nivo-slider.css', type='text/css', media='screen')
+    link(rel='stylesheet', type='text/css', href='css/style.css')
+    link(rel='stylesheet', type='text/css', href='style.css')
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+    script(language='javascript', type='text/javascript', src='jquery.js')
+    script(type='text/javascript', src='js/modernizr.custom.79639.js')
+  body
+    //
+      Begin Header Content
+    header
+      img#logoimg(src='images/logom.png')
+      h2#logotxt The Willow Lake B&B
+      #HeaderLinks
+        a.MenuLinks(href='#top') Home
+        a.MenuLinks(href='#roomsection') Rooms
+        a.MenuLinks(href='#diningsection') Dining
+        a.MenuLinks(href='#packagesection') Packages
+        a.MenuLinks(href='#attractionsection') Attractions
+        a.MenuLinks(href='#locationsection') Location
+        a.MenuLinks(href='#registrationsection') Register
+    //
+      End Header Content
+    //
+      Begin Main Body of Webpage
+    #top lolpadding4links
+    #mainbody
+      //
+        Begin Slider Code
+      center
+        #wrapper
+          .slider-wrapper.theme-default
+            #slider.nivoSlider
+              img(src='images/home.png', alt='not supported', data-transition='slideInLeft')
+              img(src='images/breakfast.png', alt='not supported', data-transition='slideInLeft')
+              img(src='images/forest.png', alt='not supported', data-transition='slideInLeft')
+              img(src='images/boat.png', alt='not supported', data-transition='slideInLeft')
+      //
+        End Slider Code
+      //
+        Begin Preview Boxes
+      #previewbb
+        .previewboxes
+          .previewcontent
+            | hm
+        .previewboxes
+          .previewcontent
+            | hm
+        .previewboxes
+          .previewcontent
+            | hm
+      //
+        End Preview Boxes
+      //
+        Begin Rooms Section of Webpage
+      #roomsection
+        h1#roomstitle Rooms
+        //
+          Begin Chelf Room Code
+        #chelf
+          .imgalignleft
+            img.imgfloatright(src='images/room1.png')
+          hr.vlalign(size='285px', width='1px')
+          .textaligncenterright
+            .textparaalignright
+              h2.textalign The Chelf Room
+              p
+                i Price: $175.00 plus tax per room per night
+              p The Chelf Room features a queen-sized bed, dresser, desk, and reading chair.
+              p
+                | On the second floor, this spacious room has a great view of the grounds from the porch.
+              p The bathroom has a large whirlpool tub to relax in!
+        //
+          End Chelf Room Code
+        .sectionpad
+        //
+          Begin Lightfoot Room Code
+        #lightfoot
+          .imgalignright
+            img.imgfloatleft(src='images/room2.png')
+          hr.vlalign(size='285px', width='1px')
+          .textaligncenterleft
+            .textparaalignleft.textalignright
+              h2.textalign The Lightfoot
+              p
+                i Price: $135.00 plus tax per room per night
+              p The Lightfoot is the largest and sunniest room here.
+              p This room is ideal for couples or small families.
+              p
+                | It includes two beds (a queen and twin), a private bath with a shower, reading chair, desk, and drawer.
+        //
+          End Lightfoot Room Code
+        .sectionpad
+        //
+          Begin Thompson Room Code
+        #thompson
+          .imgalignleft
+            img.imgfloatright(src='images/room3.png')
+          hr.vlalign(size='285px', width='1px')
+          .textaligncenterright
+            .textparaalignright
+              h2.textalign The Thompson
+              p
+                i Price: $125.00 plus tax per room per night
+              p The Thompson was the only one untouched when renovations were made in 1923.
+              p
+                | It has a cozy king-sized bed, comfy reading chairs, and an in-room vanity with a sink.
+              p
+                | It also has a large private bath with a soaking tub and shower just outside the room.
+        //
+          End Thompson Room Code
+        .sectionpad
+        //
+          Begin Pulliam Room Code
+        #pulliam
+          .imgalignright
+            img.imgfloatleft(src='images/room4.png')
+          hr.vlalign(size='285px', width='1px')
+          .textaligncenterleft
+            .textparaalignleft.textalignright
+              h2.textalign The Pulliam
+              p
+                i Price: $175.00 plus tax per room per night
+              p The two-room suite has an amazing view of the grounds.
+              p
+                | It has an antique queen-sized bed that was hand-carved, and a private bath with a shower/tub.
+              p It also has a sitting room, which is a great place to read and relax.
+        //
+          End Pulliam Room Code
+        .endsectionpad
+      //
+        End Rooms Section of Webpage
+      //
+        Begin Dining Section of Webpage
+      #diningsection
+        h1#diningtitle Dining
+        br
+        h3(style='text-align: center; clear: both;') We have a variety of different options available for breakfast to fuel your day.
+        .container
+          section.main
+            #rm-container.rm-container
+              .rm-wrapper
+                .rm-cover
+                  .rm-front
+                    .rm-content
+                      .rm-logo
+                      h2 The Willow Lake
+                      h3 Fine Dining & Gourmet Takeaway
+                      a.rm-button-open(href='') View the Menu
+                      .rm-info
+                        p
+                          strong Gourmet Restaurant
+                          br
+                          | 1850 Hopkins Drive
+                          br
+                          | Manchester VT, 05254
+                          br
+                          strong Phone
+                          | 626.511.1170
+                          br
+                          strong Fax
+                          | 626.992.1020
+                  .rm-back
+                    .rm-content
+                      h4 Teas
+                      p Part of the "Tea Party service"
+                      dl
+                        dt Oolong Tea
+                        dd Sweet and fruity with honey aromas
+                        dt Rooibos Tea
+                        dd Tangy lemon with sweet vanilla
+                        dt English Breakfast Tea
+                        dd Traditional blend of Assam tea and Ceylon tea
+                      h4 Finger Sandwiches
+                      p Part of the "Tea Party service"
+                      dl
+                        dt Tomato-Cheddar
+                        dd Sandwich with sliced tomato, aged cheddar and watercress
+                        dt Steak au Poivre
+                        dd Thinly sliced steak and crushed peppercorns
+                        dt Ham, Brie and Apple
+                        dd Deli ham, sliced brie and sliced green apple
+                    .rm-overlay
+                .rm-middle
+                  .rm-inner
+                    .rm-content
+                      h4 Pastries
+                      dl
+                        dt French Plum Crepes
+                        dd Crepes with roasted french plums, yogurt & honey
+                        dt Chocolate Gâteau de Crêpes
+                        dd
+                          | Gâteau de crêpes with chocolate pastry cream, Hungarian cheese, and dulce de leche
+                          b (Gluten Free)
+                        dt Raspberry Croissant
+                        dd
+                          | Delicious pastry filled with rich raspberry
+                          b (Gluten Free)
+                        dt Almond Croissant
+                        dd Dried almonds from Vermont in a creamy pastry
+                        dt Nutella Croissant
+                        dd Finely crafted with exquisite Nutella filling and topping
+                    .rm-overlay
+                .rm-right
+                  .rm-front
+                  .rm-back
+                    span.rm-close Close
+                    .rm-content
+                      h4 Finger Desserts
+                      dl
+                        dt Peach-and-Blue Cheese Bites
+                        dd Simply cheese, fruit spread, and almonds
+                        dt Brownie Bourbon Balls
+                        dd These packed brownies are a favorite among our guests
+                        dt
+                          a.rm-viewdetails(href='#diningsection', data-thumb='images/12.jpg') Mini Coconut Cream Pies
+                        dd Rich coconut pie topped with fine whipped cream
+                        dt
+                          a.rm-viewdetails(href='#diningsection', data-thumb='images/10.jpg') Pistachio Mini Cakes
+                        dd Creamy cakes with real, local pistachios used in filling
+                        dt
+                          a.rm-viewdetails(href='#diningsection', data-thumb='images/7.jpg') Cheesecake Kringle
+                        dd
+                          | A local recipe using Wisconson cheese in the best cheesecake that you've ever had
+                        dt
+                          a.rm-viewdetails(href='#diningsection', data-thumb='images/4.jpg') Apple Roses
+                        dd Apple slices baked to a perfection and then topped with our secret seasoning
+                        dt
+                          a.rm-viewdetails(href='#diningsection', data-thumb='images/9.jpg') Classic Atayef
+                        dd Syrian ricotta-filled dessert pancakes
+                      .rm-order
+                        p
+                          strong Would you like us to cater your event?
+                          | Call us & we'll help you find a venue and organize the event:
+                          strong 626.511.1170
+            p#diningfooter
+              | Food off of WL property can be found at one of the local restaurants including: Francie's Diner, Home-Pah-Chicken, and Loo-Loo's kitchen.
+      //
+        End Dining Section of Webpage
+      //
+        Begin Packages Section of Webpage
+      #packagesection
+        h1#packagetitle Packages
+        #onetwo
+          .imgalignleft
+            img.imgfloatright(src='images/breakfastborder.jpg')
+          hr.vlalign(size='285px', width='1px')
+          .textaligncenterright
+            .textparaalignright
+              h2.textalign One-Night and Two-Night Packages
+              p
+                | We have extra accomodations for the traveller who finds us and needs a place to stay.
+              p You can stay in either the Lightfoot or Thompson for a night for $115
+              p If you need a longer stay, you can stay in either for $225 for two nights.
+              p It's a wonderful place for weary travellers to relax and renew.
+        .sectionpad
+        #aniversary
+          .imgalignright
+            img.imgfloatleft(src='images/wedding.jpg')
+          hr.vlalign(size='285px', width='1px')
+          .textaligncenterleft
+            .textparaalignleft.textalignright
+              h2.textalign Honeymoons and Anniversaries
+              p We also have special accomodations for honeymoons and anniversaries!
+              p
+                | You can stay in the Chelf or Pulliam for $150 a night, along with free catering to the room.
+      //
+        End Packages Section of Webpage
+      //
+        Begin Attractions Section of Webpage
+      #attractionsection
+        h1#attractiontitle Attractions
+        br
+        //
+          Begin Hildene Code
+        #hildene
+          .imgalignleft
+            img.attractionimg(src='images/lincolnhome.jpg')
+          hr.vlalign(size='500px', width='1px')
+          .textaligncenterright
+            .textparaalignright
+              h2.textalign Lincoln Memorial House
+              p
+                | One of the main attractions here is the Lincoln Memorial House, which is a 5 minute drive away.
+              p
+                | Entry costs $16 for adults, $5 for youth, and children under 6 and members are free.
+              p If you would like a guided tour, then you'll need an additional $5 for adults,
+              p and $2 for children above the age of 5.
+              a(href='http://www.hildene.org/') Website
+        //
+          End Hildene Code
+        .sectionpad
+        //
+          Begin Arts Center Code
+        #artscenter
+          .imgalignleft
+            img.attractionimg(src='images/sva.jpg')
+          hr.vlalign(size='500px', width='1px')
+          .textaligncenterright
+            .textparaalignright
+              h2.textalign Southern Vermont Arts Center
+              p A fun place to visit is the Southern Vermont Arts Center
+              p SVAC is a 10-15 minute drive from The Willow Lake.
+              p
+                | You can go to a workshop at the Hay Madeira Education Center, see a performance at the Arkell Pavilion,
+              p
+                | Browse art at the Wilson Museum or the Yester House, or wander the Sculpture Park or Boswell Botany Trail.
+              p There's lots to see and do.
+              a(href='http://www.svac.org/') Website
+        //
+          End Arts Center Code
+        .sectionpad
+        //
+          Begin Paramount Theatre Code
+        #paramount
+          .imgalignleft
+            img.attractionimg(src='images/para.jpg')
+          hr.vlalign(size='500px', width='1px')
+          .textaligncenterright
+            .textparaalignright
+              h2.textalign Paramount Theatre
+              p An inspirational place to visit is the Paramount Theatre.
+              p It's an hour drive, but it's well worth the wait to see the rennovated Theatre.
+              p The main attraction is the variety of performances you can see in the Theatre
+              p See the website for tickets and showtimes
+              a(href='http://www.paramountvt.org/') Website
+        //
+          End Paramount Theatre Code
+        .endsectionpad
+      //
+        End Attractions Section of Webpage
+      //
+        Begin Location Section of Webpage
+      #locationsection
+        h1#locationtitle Location
+        br
+        #locationbb
+          .textaligncenterleft
+            .textparaalignleft.textalignright
+              h3.textalign Address
+              div
+                p 1850 Hopkins Drive
+                p Manchester VT, 05254
+              hr(size='1px', width='300px', style='margin-right: 0% !important;')
+              h3 Hours of Operation
+              p Sat-Sun (2:00am-12:00pm)
+          hr.vlalign(size='300px', width='1px')
+          .imgalignright
+            iframe(src='https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x89e06008817405cd%3A0x2b27eb10402ae74e!2sHopkins+Dr%2C+Manchester%2C+VT+05255!5e0!3m2!1sen!2sus!4v1389153676877', width='440px', height='276px', frameborder='0', style='float: left; margin-left: 10%;')
+        .endsectionpad
+      //
+        End Location Section of Webpage
+      //
+        Begin Registration Section of Webpage
+      #registrationsection
+        h1#registrationtitle Register
+        h3#registrationheader
+          | Fill out the form below to express your interest in staying at the Willow Lake. We will contact you with availability and pricing.
+        #lookin
+          //
+            Begin Google Spreadsheet input 
+          center
+            form(method='POST', action='https://docs.google.com/forms/d/1J1A0IZsKrPGx4oC8JBHCoBF60BG7rlB048zquLnORYA/formResponse', target='hidden_iframe', onsubmit='checkSub=true;')
+              input(type='text', placeholder='Name', name='entry.551724886')
+              br
+              input(type='text', placeholder='Address', name='entry.265372558')
+              br
+              //
+                 multiple choice 
+              select#entry_2076861316(type='ermah', name='entry.2076861316', aria-label='Room')
+                option(placeholder='Select a Room', value='') -Select a Room-
+                option(value='The Thompson') The Thompson
+                option(value='The Pulliam') The Pulliam
+                option(value='The Washington') The Washington
+                option(value='The Chelf Room') The Chelf Room
+              //
+                 End multiple choice 
+              br
+              input(type='text', placeholder='Package Desired (If any)', name='entry.2089624785')
+              .ss-form-entry
+                br
+                input(type='text', placeholder='Intended Date of Arrival (mm/dd/yyyy)', name='entry.1957953612')
+                br
+                input(type='number', placeholder='Stay Duration (Number of Nights)', name='entry.1683880751', aria-label='Stay duration (Nights)  Must be a number greater than or equal to 1', step='any', min='1.0', aria-valuemin='1.0', title='Must be a number greater than or equal to 1')
+              br
+              input(type='submit', value='Submit')
+          //
+             End Google Spreadsheet input 
+        iframe#hidden_iframe(name='hidden_iframe', style='display: none;', onload='if(checkSub){alert(\'You Have Registered! Payment is processed once you check in.\')')
+      //
+        End Registration Section of Webpage
+      //
+        Begin Footer
+      footer
+        p.foot ©2013 Willow Lake Bed and Breakfast.
+      //
+        End Footer
+    //
+      End Main Body of Webpage
+    //
+      Begin Slider Script Code
+    script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js')
+    script(type='text/javascript', src='scripts/jquery-1.9.0.min.js')
+    script(type='text/javascript', src='js/menu.js')
+    script(type='text/javascript', src='slider/jquery.nivo.slider.js')
+    script(type='text/javascript')
+      $(window).load(function() {
+      $('#slider').nivoSlider();
+      });
+    script(type='text/javascript')
+      $(function() {
+      Menu.init();
+      });
+    //
+      End Slider Script Code

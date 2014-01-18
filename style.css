@@ -279,6 +279,18 @@ a.MenuLinks {
 .pkgpadside{
 	margin-left: 3em;
 }
+
+#onetwo{
+       clear:both;
+       width: 100%;
+       margin:0 auto;
+}
+
+#anniversary{
+       clear:both;
+       width: 100%;
+       margin:0 auto;
+}
 /*End Packages Section Definitions*/
 /*Begin Attractions Section Definitions*/
 #attractionsection{
