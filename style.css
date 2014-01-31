@@ -8,7 +8,9 @@
 
 body{
 	font-family: "Montserrat";
-	background-color: #7A6A52;
+	background-image:url('images/bg.jpg');
+	background-attachment: fixed;
+	background: cover;
 	padding: 0em;
 	margin: 0em;
 }
@@ -97,7 +99,7 @@ li {
 .textaligncenterright{
 	width:49.5%;
 	float:right;
-	margin:0 auto;
+	margin:4em auto;
 }
 
 .textparaalignleft{
@@ -175,7 +177,6 @@ a.MenuLinks {
 /*End Header Definitions*/
 /*Begin Body and Preview Definitions*/
 #mainbody {
-	background-image:url('images/bg.jpg');
 	min-width:1200px;
 	margin-top:75px;
 }
@@ -245,7 +246,7 @@ a.MenuLinks {
 	clear:both;
 	float:left;
 	width:100%;
-	padding-bottom:350px;
+	padding-bottom:150px;
 	background-color: #675B49;
 	color:white;
 }
@@ -420,7 +421,6 @@ form input[type="submit"]{
 	clear:both;
 	float:left;
 	width:100%!important;
-	background-image:url('images/bg.jpg');
 }
 
 #registrationtitle {
